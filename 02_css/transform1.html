@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: lightgoldenrodyellow;
+        width: 2000px;
+        height: 2000px;
+      }
+      .pic1 {
+        position: relative;
+        height: 300px;
+        width: 500px;
+        transform: skewY(25deg) translate(800px, 50px);
+        z-index: 5;
+      }
+      .pic2 {
+        position: relative;
+        transform: skewY(25deg) translate(500px, 100px);
+        height: 300px;
+        width: 500px;
+        z-index: 3;
+      }
+      .pic3 {
+        position: relative;
+        transform: skewY(25deg) translate(300px, 100px);
+        height: 300px;
+        width: 500px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="pic1"
+        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA2MTJfMjk3%2FMDAxNzE4MTg2Mzk0NTI2.uCHp8El3tGMKwaGsa2_ucvdxk9-TLsuToAxNCh2DHR0g.iYfflfmMtq8XbsIt2fVyAKi0oHVwPobDX5HBa4HbqKog.JPEG%2F20240612%25A3%25DF183508.jpg&type=a340"
+      />
+      <img
+        class="pic2"
+        src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MDJfMjY4%2FMDAxNzEyMDE2NjQxMTYz.Sa3wEA7_PZobQLlVDVSbEOu834LfgVhaTWGHMpaH0DAg.Kj393yWRaUjFdLV89fKgX7mtC-xBji9RTDfBAQ4OfxEg.PNG%2Fimage.png&type=sc960_832"
+      />
+      <img
+        class="pic3"
+        src="https://search.pstatic.net/sunny/?src=http%3A%2F%2Fcfile239.uf.daum.net%2Fimage%2F1669A5344EC3BB4D24C152&type=sc960_832"
+      />
+    </div>
+  </body>
+</html>
