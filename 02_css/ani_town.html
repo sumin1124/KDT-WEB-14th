@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+      body {position: relative;;
+        animation-name: backcolor;
+        animation-duration: 9s;
+        animation-iteration-count: 2;
+      } /* animation: name duration (timing-function) (delay) iteration-count (direction) (fill-mode); */
+      .moon{width: 1vw;
+        height: 1vh;
+        position: absolute;
+        translate(100px,10px) ;
+      }
+      .cloud{width: 1vw;
+        height: 1vh;
+        position: absolute;}
+
+      .city{width: 1vw;
+        height: 1vh;
+        position: absolute;
+    }
+      @keyframes backcolor {
+        0% {
+          background-color: rgb(118, 63, 138);
+        }
+        25% {
+          background-color: rgb(81, 81, 189);
+        }
+        50% {
+          background-color: skyblue;
+        }
+        75% {
+          background-color: pink;
+        }
+        100% {
+          background-color: ;
+        }
+      }
+  </style>
+  <body>
+    <div class="moon"><img src="moon.png" alt="" /></div>
+    <div class="cloud"><img src="cloud.png" /></div>
+    <div class="sun"><img src="sun.png" alt="" /></div>
+    <div class="city"><img src="city.png" alt="" /></div>
+  </body>
+</html>
