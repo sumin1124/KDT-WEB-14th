@@ -109,18 +109,22 @@
 
     <script>
       let input;
-      input = this;
-      $("td").on("click", function () {
+
+      $("td > p").on("click", function () {
         console.log(this);
         console.log($(this).text());
-        console.log($("#date").val($(this).text()));
-        let li = document.createElement("li");
-        li.innerText = "prepand()로 추가된 JS";
+
+        $("#date").val($(this).text());
+
+        input = this;
       });
 
       function writeSchedule() {
-        const content = $("#content").val();
-        td.p.prepand("content");
+        let content = $("#content").val();
+
+        $(input)
+          .parent()
+          .append("<span>" + content + "</span><br />");
 
         $("#content").val("");
         $("#date").val("");
