@@ -6,28 +6,90 @@
     <title>project</title>
   </head>
   <link rel="stylesheet" href="project.css" />
-  <body>
-    <div>
-      여의도 한강공원 및 한강변 일대에서 열리는 한화그룹의 사회 공헌 행사
-    </div>
-    <br />
-    <div><strong>한화와 함께하는 서울세계불꽃축제</strong></div>
-    <br />
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <br>
+    <header>
+      <nav></nav>
+    </header>
+    <figure></figure>
+    <br /><br />
+    <h5><strong>여의도 한강공원 및 한강변 일대에서 열리는 한화그룹의 사회 공헌 행사</strong></h5>
+    <h2><strong>한화와 함께하는 서울세계불꽃축제</strong></h2>
     <div class="date_box">
-      <span>D-1</span>
-      <!--남은 day,hour,min,sec 표시기능-->
+      <div class="d-daybox"><strong>D-1</strong></div>  <!-- 디데이 날짜 자동으로 계산해주는 시스템 -->
+      <div
+        id="myCountdown"
+        class="ii i03 myCountdown"
+        data-date="10/05/2024 18:30:00"
+      >
+        <div data-title="DAY">
+          <span id="counter-days" class="counter-days">07</span>
+        </div>
+        <p>:</p>
+        <div data-title="HOUR">
+          <span id="counter-hours" class="counter-hours">23</span>
+        </div>
+        <p>:</p>
+        <div data-title="MIN">
+          <span id="counter-minutes" class="counter-minutes">03</span>
+        </div>
+        <p>:</p>
+        <div data-title="SEC">
+          <span id="counter-seconds" class="counter-seconds">12</span>
+        </div>
+      </div>
+
+      <!--남은 day,hour,min,sec 표시기능, 이상해짐 (?)-->
     </div>
     <br />
-    <span>2024.10.05 ~ 2024.10.05</span>
+    <span><strong>2024.10.05 ~ 2024.10.05</strong></span>
+    <br><br>
+    <!-- 화살표 표시해서 사진 넘기기 기능? -->
     <div class="img_box">
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
-      <img src="" alt="" />
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+      </svg>
+      <img src="./불꽃축제.jpg" alt="" />
+      <img src="./불꽃축제2.jpg" alt="" />
+      <img src="./불꽃축제 4.jpg" alt="" />
+      <!-- <img src="" alt="" /> -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+      </svg>
     </div>
+   
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+      <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z"/>
+      <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z"/>
+    </svg>
+    <!-- 공유 버튼 둘 중 고민. https://icons.getbootstrap.kr/icons/box-arrow-up/ -->
     <!--  이미지 넘기기 기능, 이미지 밑에 1/4 이런식으로 표시? -->
     <!-- 하트누르기 기능. 공유하기 기능 -->
-    <div>
+     <br><br>
+    <div class="content_1">
       서울세계불꽃축제는 바쁜 매일을 살아가는 시민의 일상에 즐거움을 선사하기
       위해 한화그룹에서 2000년부터 사회공헌 사업으로 꾸준히 진행해 온 축제이다.
       매년 세계적인 수준의 불꽃 전문 기업들이 초청되어 여의도의 밤 하늘을 무대로
@@ -35,15 +97,65 @@
       (주)한화가 자랑하는 '멀티미디어 불꽃쇼'는 불꽃과 음악, 레이저 연출이
       결합된 아시아 최고 수준의 불꽃쇼이다.
     </div>
-    <div>
+    <!-- <div>
       [행사내용]<br />
       - 시민참여 프로그램 <br />
       - 공식행사 및 불꽃쇼
-    </div>
-    <img
+    </div> 더보기해서 넣을지 말지 고민-->
+    <br /><br /><br />
+    <hr />
+    <br>
+    <div><img class="heart"
       src="https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/fac40458-d12f-4963-8036-38d07a5155f7_3.jpg"
       alt=""
     />
-    <div id="circle"></div>
+    <div id="circle"></div><span>2024.10.05 ~ 2024.10.05</span>
+    <div id="circle"></div><span>서울특별시 영등포구 여의동로 330 (여의도동) </span>
+    <div id="circle"></div><span>무료 (일부 관람석 유료화)</span>
+    <div id="circle"></div><span>한화그룹, SBS/(주) 한화,한화생명,한화손해보험,한화에어로스페이스,한화토탈에너지스,한화솔루션,한화투자증권,한화시스템,한화비전,한화임팩트,한화자산운용</span>
+    <div id="circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+     </svg> <!--둘 중 뭐할지 고민 --></div><span>02-519-9778</span> 
+  <a href="https://www.hanwhafireworks.com/kor/main.html" class="home"><div class="homepage">공식 홈페이지<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+    <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+    <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"/>
+  </svg></div></a>
+  </div>
+<br><br>
+  <hr>
+
+    <h5><strong>길찾기</strong></h5>
+    <br><br>
+    <img src="./한화불꽃놀이_지도.png" alt="">
+    <hr>
+    
+    <!-- 안내 어쩌구 -->
+   
+    <!-- 여기 앞에다 유튜므 아이콘 넣기 -->
+     <!-- 유튜브이미지 선정 -->
+     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+    </svg>
+    <h4><strong>Youtube</strong></h4>
+   <a href="https://youtu.be/gTh55p0_lb4?si=dYefQg3NYefA1TvY "><img src="" alt=""></a>
+   <hr>
+   <h5><strong>축제와 함께 즐기기 좋은 영등포구 맛집</strong></h5>
+
+
+   <hr>
+   <h5><strong>이런 축제는 어때요?</strong></h5>
+   <div class="img_box2">
+   <img src="./불꽃축제.jpg" alt="" />
+   <!-- <h6><strong>설명</strong></h6> -->
+   <img src="./불꽃축제2.jpg" alt="" />
+   <!-- <h6><strong>설명</strong></h6> -->
+   <img src="./불꽃축제 4.jpg" alt="" />
+   <!-- <h6><strong>설명</strong></h6> -->
+  </div>
+      <br><br>
+     <hr />
+     <br><br><br>
   </body>
 </html>
